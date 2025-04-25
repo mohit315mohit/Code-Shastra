@@ -24,7 +24,7 @@ const ChatInput = ({ onSend }) => {
       transition={{ duration: 0.3 }}
     >
       <motion.div 
-        className="flex-1 relative bg-white/80 dark:bg-gray-800/80 rounded-lg overflow-hidden"
+        className="flex-1 relative  bg-transparent rounded-lg overflow-hidden"
         animate={{ 
           boxShadow: isFocused ? "0 0 0 2px rgba(59, 130, 246, 0.5)" : "inset 0 2px 4px rgba(0, 0, 0, 0.05)"
         }}
@@ -36,7 +36,7 @@ const ChatInput = ({ onSend }) => {
           onFocus={() => setIsFocused(true)}
           onBlur={() => setIsFocused(false)}
           onKeyPress={handleKeyPress}
-          className="w-full p-3 bg-transparent outline-none placeholder:text-gray-400"
+          className="w-full p-3 bg-transparent outline-none text-white placeholder:text-gray-400"
           placeholder="Ask anything..."
         />
       </motion.div>
@@ -50,7 +50,7 @@ const ChatInput = ({ onSend }) => {
         animate={{ opacity: input.trim() ? 1 : 0.7 }}
       >
         <motion.div whileHover={{ x: 2 }} transition={{ type: "spring" }}>
-          <IoSendSharp size={20} />
+          <IoSendSharp size={20} color="#fff" />
         </motion.div>
       </motion.button>
     </motion.div>

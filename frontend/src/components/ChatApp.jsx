@@ -63,7 +63,7 @@ const ChatApp = () => {
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="h-screen mx-auto p-6 z-10 relative max-w-3xl"
+        className="h-screen ml-auto p-6 pt-[5rem] z-10 relative pl-72"
       >
         <motion.div 
           className="flex items-center justify-center mb-6"
@@ -82,7 +82,7 @@ const ChatApp = () => {
         </motion.div>
 
         <motion.div 
-          className="bg-gray-900/70 backdrop-blur-sm rounded-2xl shadow-xl p-6 mb-4 h-96 overflow-y-auto border border-gray-700/50"
+          className="bg-gray-900/70 backdrop-blur-sm rounded-2xl shadow-xl p-6 mb-4 h-[27rem] overflow-y-auto border border-gray-700/50"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
@@ -146,7 +146,7 @@ const ChatApp = () => {
         </motion.div>
 
         <motion.div
-          className="absolute w-11/12 bottom-10 left-1/2 transform -translate-x-1/2 max-w-3xl"
+          className="absolute bottom-10 left-1/6 w-[79.8%]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4 }}
